@@ -1,0 +1,34 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $farbe-grau;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+  padding: 0.2em 0;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+p {
+  @include fontparagraph;
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: 300;
+}

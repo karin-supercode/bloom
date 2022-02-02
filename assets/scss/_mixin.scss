@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Open+Sans:wght@300;400&display=swap");
+
+@import "_variables.scss";
+
+@mixin flexIt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flexGrid2x1 {
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+}
+
+@mixin flexWrapCenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+}
+
+@mixin fontheadline {
+  font-family: "Libre Caslon Display", serif;
+}
+@mixin fontparagraph {
+  font-family: "Open Sans", sans-serif;
+}
